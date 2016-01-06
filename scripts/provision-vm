@@ -21,7 +21,7 @@ echo "Installing Java Open JDK 1.8"
 yum -y install java-1.8.0-openjdk
 yum -y install java-1.8.0-openjdk-devel
 
-echo "Installing Java Open JDK 1.8"
+echo "Installing Git"
 yum -y install git
 
 #echo "Installing Gradle 2.8"
@@ -33,10 +33,10 @@ yum -y install git
 #echo "Updating bash_profile with Gradle"
 #printf "\n## GRADLE 2.8 ##\nexport GRADLE_HOME=/opt/gradle/latest\nexport PATH=\$PATH:\$GRADLE_HOME/bin \n## GRADLE 2.8 ##" >> /home/vagrant/.bash_profile
 
-echo "Updating bash_profile with App Variables"
-printf "\n export DB2_CONN=jdbc:db2://127.0.0.1:50000 \nexport DB2_USER=db2inst1 \nexport DB2_PASS=password11" >> /home/vagrant/.bash_profile
+#echo "Updating bash_profile with App Variables"
+#printf "\n export DB2_CONN=jdbc:db2://127.0.0.1:50000 \nexport DB2_USER=db2inst1 \nexport DB2_PASS=password11" >> /home/vagrant/.bash_profile
 
-source ~/.bash_profile
+#source ~/.bash_profile
 
 echo "Copying motd"
 cp /vagrant/config/motd /etc/motd
